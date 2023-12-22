@@ -1,0 +1,26 @@
+nav{
+    background: linear-gradient(to right, #367D7F, #12575B, #002A2F) !important;
+}
+.container-fluid a{
+    color: white !important;
+}
+.container-fluid a:hover{
+    color: #2A2A2A !important;
+}
+.dropdown-menu{
+    background-color: #2A2A2A !important;
+}
+.dropdown-menu a:hover{
+    color: #2A2A2A !important;
+}
+
+.navbar-toggler{
+    color: #ffffff !important;
+    border: 1px solid #fff;
+}
+.navbar-toggler span{
+    color: #ffffff;
+}
+.navLogo{
+    height: 50px;
+}
