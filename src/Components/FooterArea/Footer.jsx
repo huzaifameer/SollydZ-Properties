@@ -2,9 +2,7 @@
 function Footer(){
     return(
         <>
-            <h2>
-                This is the Footer Area
-            </h2>
+            <h1>SollydZ Footer</h1>
         </>
     )
 }

@@ -24,3 +24,13 @@ nav{
 .navLogo{
     height: 50px;
 }
+.navbar-collapse{
+
+    justify-content: space-between;
+}
+/*.navbar-collapse span:nth-child(1){
+    margin-right: 150px;
+}*/
+.navbar-collapse .form-control{
+    margin-right: 20px !important;
+}
