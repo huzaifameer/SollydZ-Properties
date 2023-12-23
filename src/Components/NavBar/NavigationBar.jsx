@@ -28,10 +28,10 @@ const NavigationBar = () => {
                                     <Link className="nav-link" aria-current="page" to="/">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/aboutus">About Us</Link>
+                                    <Link className="nav-link" to="/properties">Properties</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/properties">Properties</Link>
+                                    <Link className="nav-link" to="/aboutus">About Us</Link>
                                 </li>
                             </ul>
                             <span className='navbar-text'>
@@ -40,7 +40,7 @@ const NavigationBar = () => {
                                            aria-label="Search" />
                                     <button className="btn btn-outline-light" type="submit">Search</button>
                                 </form>
-                            </span>
+                            </span><br/>
                             <span className="navbar-text">
                             <Link to='/contactpage'><button className='btn btn-outline-light'>Contact Us</button></Link>
                         </span>
