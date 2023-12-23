@@ -40,7 +40,7 @@ function Footer(){
                     </div>
                 </div>
             </section>
-            <div className="copyright">
+            <div className="copyright">{/*developer copyrights*/}
                 <p>&#169; HUZAIFAAMEER 2023 All Right Reserved</p>
             </div>
         </>
