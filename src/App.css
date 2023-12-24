@@ -1,0 +1,38 @@
+*{
+    user-select: none;
+}
+.defaultHeroClass,.propertiesHero{
+    min-height: calc(100vh - 66px);
+    /*background: url("/src/assets/Images/Home_bg.jpg") center/cover no-repeat ;*/
+    background: url("/src/assets/Images/propertBG.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.propertiesHero{
+    /*background: url("/src/assets/Images/propertBG.jpg") center/cover no-repeat;*/
+    background: url("/src/assets/Images/Home_bg.jpg") center/cover no-repeat ;
+    min-height: 70vh;
+}
+.bannerArea{
+    display: inline-block;
+    background: rgba(0,0,0,0.8);
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.bannerArea h1{
+    font-size: 2.5rem;
+}
+.bannerArea div{
+    width: 10rem;
+    height: 5px;
+    background-color: #B7CECF;
+    margin: 1.7rem auto;
+}
+.bannerArea p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
