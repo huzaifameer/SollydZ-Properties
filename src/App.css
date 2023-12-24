@@ -3,14 +3,12 @@
 }
 .defaultHeroClass,.propertiesHero{
     min-height: calc(100vh - 66px);
-    /*background: url("/src/assets/Images/Home_bg.jpg") center/cover no-repeat ;*/
     background: url("/src/assets/Images/propertBG.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .propertiesHero{
-    /*background: url("/src/assets/Images/propertBG.jpg") center/cover no-repeat;*/
     background: url("/src/assets/Images/Home_bg.jpg") center/cover no-repeat ;
     min-height: 70vh;
 }
