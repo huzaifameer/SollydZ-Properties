@@ -1,10 +1,10 @@
-
+import HeroBanner from "./HeroBanner.jsx";
 
 
 function HomePage(){
     return(
         <>
-            <h1>SollydZ Home Page</h1>
+            <HeroBanner/>
         </>
     )
 
