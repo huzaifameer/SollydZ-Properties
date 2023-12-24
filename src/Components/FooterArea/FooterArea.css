@@ -25,21 +25,20 @@
 .social{/*social media icons styles*/
     display: flex;
     align-items: center;
-    column-gap: 0.5rem;
-    margin-top: 25px;
+    column-gap: 1.1rem;
+    margin-top: 35px;
 }
-.social a .bx{
+.social a img{
+    width: 40px;
     text-decoration: none;/*removing the text decoration*/
-    color: #ffeeee;
-    font-size: 24px;
-    background-color: #777775;
-    border-radius: .2rem;
-    padding: 2px;
-}
-.social a .bx:hover{/*adding separate hover effects*/
     background-color: #ffeeee;
-    color: #333331;
+    border-radius: .4rem;
+    padding: 4px;
+}
+.social a img:hover{/*adding separate hover effects*/
+    background-color: #367D7F;
     transition: 0.3s all ease-in-out;
+    border: 2px solid #ffffff;
 }
 .footer-box h3{/*Applies for all 4 boxes*/
     font-weight: 600;

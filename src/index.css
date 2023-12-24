@@ -1,3 +1,5 @@
 body{
     background: linear-gradient(to left, #383838, transparent);
+    margin: 0;
+    padding: 0;
 }

@@ -1,16 +1,20 @@
 import './FooterArea.css'
+import Facebook from '/src/assets/Images/square-facebook.svg'
+import Instagram from '/src/assets/Images/square-instagram.svg'
+import Twitter from '/src/assets/Images/square-twitter.svg'
+import LinkedIn from '/src/assets/Images/linkedin.svg'
 function Footer(){
     return(
         <>
             <section className="footer">
                 <div className="footer-box">
-                    <h2>SollydZ</h2>
+                    <h2>SollydZ Properties</h2>
                     <p>Find your place in the heart of exceptional living with us.</p>
                     <div className="social">
-                        <a href="#"><i className="bx bxl-facebook"></i></a>
-                        <a href="#"><i className="bx bxl-twitter"></i></a>
-                        <a href="#"><i className="bx bxl-instagram"></i></a>
-                        <a href="#"><i className="bx bxl-tiktok"></i></a>
+                        <a href="#"><img src={Facebook} alt=""/></a>
+                        <a href="#"><img src={Instagram} alt=""/></a>
+                        <a href="#"><img src={Twitter} alt=""/></a>
+                        <a href="#"><img src={LinkedIn} alt=""/></a>
                     </div>
                 </div>
                 <div className="footer-box">
@@ -34,7 +38,7 @@ function Footer(){
                 <div className="footer-box">
                     <h3>Contact Us</h3>
                     <div className="contact">
-                        <span><i className="bx bxs-map"></i> 110/1, Colombo Road, Galle, Sri lanka</span>
+                        <span><i className="bx bxs-map"></i> Galle, Southern Province, Sri lanka</span>
                         <span><i className="bx bxs-phone"></i> +94 91 2243333</span>
                         <span><i className="bx bxs-envelope"></i>sollydzrestate@gmail.com</span>
                     </div>

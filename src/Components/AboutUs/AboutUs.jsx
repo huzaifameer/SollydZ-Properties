@@ -1,7 +1,9 @@
 import House1 from '/src/assets/Images/house-1.jpg'
 import House2 from '/src/assets/Images/house-2.jpg'
 import House3 from '/src/assets/Images/house-3.jpg'
+import AboutUsImg from '/src/assets/Images/SollydZ-About.png'
 import './AboutUs.css'
+import React from "react";
 
 
 function AboutUs(){
@@ -53,7 +55,65 @@ function AboutUs(){
                             </button>
                         </div>
                 </div>
-            </div>
+            </div><br/>
+            <div className="container border-5">
+                <div className="row row-cols-1 row-cols-md-3 g-4">
+                    <div className="col">
+                        <div className="card h-100">
+                            <img src={AboutUsImg} className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <h5 className="card-title">About SollydZ</h5>
+                                <p className="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi debitis ipsum
+                                    velit? A ab aliquam blanditiis impedit labore laborum, maxime placeat possimus
+                                    praesentium quaerat quibusdam rerum sequi sit temporibus tenetur. A, aspernatur
+                                    consequuntur cumque error ipsum labore maxime, molestiae nobis, qui quisquam sint
+                                    totam.
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                <small className="text-muted">Posted By : Admin Team</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="card h-100">
+                            <img src="https://img.freepik.com/free-vector/flat-design-real-estate-searching-with-gadgets_23-2148653817.jpg?w=826&t=st=1703393950~exp=1703394550~hmac=d6e9a5e031b4f955bc334539e45466f808f9e5de72657e7c6530eaf545a9dd5c" className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <h5 className="card-title">SollydZ Properties</h5>
+                                <p className="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi debitis ipsum
+                                    velit? A ab aliquam blanditiis impedit labore laborum, maxime placeat possimus
+                                    praesentium quaerat quibusdam rerum sequi sit temporibus tenetur. A, aspernatur
+                                    consequuntur cumque error ipsum labore maxime, molestiae nobis, qui quisquam sint
+                                    totam.
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                <small className="text-muted">Posted By : Admin Team</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="card h-100">
+                            <img src="https://img.freepik.com/free-photo/hand-presenting-model-house-home-loan-campaign_53876-104970.jpg?w=826&t=st=1703394319~exp=1703394919~hmac=a7871ad7452c637be3453542f10df6e79956ec15fe701b0dbb4392f90b427112" className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <h5 className="card-title">Our Goal</h5>
+                                <p className="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi debitis ipsum
+                                    velit? A ab aliquam blanditiis impedit labore laborum, maxime placeat possimus
+                                    praesentium quaerat quibusdam rerum sequi sit temporibus tenetur. A, aspernatur
+                                    consequuntur cumque error ipsum labore maxime, molestiae nobis, qui quisquam sint
+                                    totam.
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                <small className="text-muted">Posted By : Admin Team</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br/>
         </>
     )
 
