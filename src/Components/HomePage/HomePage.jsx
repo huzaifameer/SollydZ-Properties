@@ -1,6 +1,7 @@
 import HeroArea from "../HeroArea/HeroArea.jsx";
 import BannerArea from "../Banner/BannerArea.jsx";
 import {Link} from "react-router-dom";
+import ServicesArea from "../ServicesArea/ServicesArea.jsx";
 
 function HomePage(){
     return(
@@ -12,6 +13,7 @@ function HomePage(){
                     </Link>
                 </BannerArea>
             </HeroArea>
+            <ServicesArea/>
         </>
     )
 

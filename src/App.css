@@ -1,6 +1,7 @@
 *{
     user-select: none;
 }
+/*Hero section styles starting*/
 .defaultHeroClass,.propertiesHero{
     min-height: calc(100vh - 66px);
     background: url("/src/assets/Images/propertBG.jpg") center/cover no-repeat;
@@ -12,6 +13,8 @@
     background: url("/src/assets/Images/Home_bg.jpg") center/cover no-repeat ;
     min-height: 70vh;
 }
+/*Hero section styles ending*/
+/*Banner Styles Starting*/
 .bannerArea{
     display: inline-block;
     background: rgba(0,0,0,0.8);
@@ -49,3 +52,61 @@
     background: transparent;
     color: #ffffff;
 }
+/*Banner Styles Ending*/
+/*Title bar styles starting*/
+.title-section{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.title-section h3{
+    font-size: 2rem;
+    letter-spacing: 1.4px;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.title-section div{
+    width: 6rem;
+    height: 4px;
+    margin: 0 auto;
+    background-color: #002A2F;
+}
+/*Title bar styles ending*/
+
+/*services area styles starting*/
+.services-area{
+    padding: 4rem 0;
+    text-align: center;
+}
+.service-center-style{
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 30px;
+}
+.service span{
+    display: inline-block;
+    color: #002A2F;
+    font-size: 2.5rem;
+    margin-bottom: 1.4rem;
+}
+.service p{
+    text-align: justify;
+}
+/*services area styles ending*/
+
+/*properties styling starting*/
+.special-display{
+    display: grid !important;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 20px;
+}
+.special-display img{
+    height: 250px;
+    overflow: hidden;
+    position: center;
+}
+/*properties styling ending*/
