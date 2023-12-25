@@ -91,27 +91,75 @@
       ],
       "url":"properties/prop2.html",
       "added": {
-        "month":"September",
-        "day":14,
+        "month":"August",
+        "day":30,
         "year":2022
       }
     },
     {
       "id":"prop5",
-      "type":"Flat",
+      "type":"Apartment",
+      "bedrooms":3,
+      "price":399995,
+      "tenure":"Freehold",
+      "description":"$113K+ of Gross Rent on the books for 2023! Amazing investment or beach home with DIRECT WALK-UP ACCESS TO THE BEACH! This stylishly decorated, fully furnished condo is centrally located on the Gulf side of the beautiful AZURE Condominium resort. Prime location on the ground floor with easy access to the pool area and the sugar-sand beaches just beyond make this unit one of the most desirable rentals in the complex. Quick and convenient access to the covered parking garage and no need for stairs or elevators. A rare find perfect for a second home, primary residence or a lucrative investment property. The condo is a phenomenal vacation rental with consistently high gross rental numbers year over year. The unit features tile throughout (no carpet). Water heater and dishwasher replaced in Dec. 2021. 9 Ft ceilings throughout and an open floor plan create a spacious, inviting atmosphere. Two King bedrooms and a third spacious bedroom with a Queen and Twin, as well as a Queen-sized sleeper sofa in the living room. Huge master bathroom with separate shower and garden tub. Higher occupancy capacity than higher floor units. Per the Azure condominium regulations and fire code restrictions ground floor units are allowed to sleep more occupants than similar units on higher floors. Unit 113 is allowed 10 occupants. The Azure complex features two pools (one seasonally heated), two large hot tubs, covered parking garage and code gate access, lush tropical landscaping, newly updated beach walkway, fully equipped exercise room and outdoor grills available to owners and guests. Buyer to verify all information.",
+      "location":"1150 Santa Rosa Blvd Unit 113, Fort Walton Beach, FL 32548",
+      "picture":"https://ap.rdcpix.com/2e0547fd0cf8fe462797d90dc1347c9fl-m3790273711od-w1024_h768_x2.webp",
+      "images": [
+        "https://ap.rdcpix.com/2e0547fd0cf8fe462797d90dc1347c9fl-m62360219od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/2e0547fd0cf8fe462797d90dc1347c9fl-m4288661367od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/2e0547fd0cf8fe462797d90dc1347c9fl-m4227915006od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/2e0547fd0cf8fe462797d90dc1347c9fl-m1194885151od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/2e0547fd0cf8fe462797d90dc1347c9fl-m367310628od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/2e0547fd0cf8fe462797d90dc1347c9fl-m574618318od-w1024_h768_x2.webp"
+      ],
+      "url":"properties/prop2.html",
+      "added": {
+        "month":"June",
+        "day":24,
+        "year":2023
+      }
+    },
+    {
+      "id":"prop6",
+      "type":"Beach front Apartment",
+      "bedrooms":2,
+      "price":399995,
+      "tenure":"Freehold",
+      "description":"",
+      "location":"1448 Tina Dr Apt 224, Navarre Beach, FL 32566",
+      "picture":"https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m978117128od-w1024_h768_x2.webp",
+      "images": [
+        "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m2609901311od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m2193001887od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m4078986802od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m3425167889od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m3851871950od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m2301664275od-w1024_h768_x2.webp"
+      ],
+      "url":"properties/prop2.html",
+      "added": {
+        "month":"December",
+        "day":14,
+        "year":2023
+      }
+    },
+    {
+      "id":"prop7",
+      "type":"Apartment",
       "bedrooms":2,
       "price":399995,
       "tenure":"Freehold",
       "description":"",
       "location":"Crofton Road Orpington BR6",
-      "picture":"/src/assets/Images/prop-4/prop1.jpg",
+      "picture":"https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m978117128od-w1024_h768_x2.webp",
       "images": [
-        "/src/assets/Images/prop-4/prop2.jpg",
-        "/src/assets/Images/prop-4/prop3.jpg",
-        "/src/assets/Images/prop-4/prop4.jpg",
-        "/src/assets/Images/prop-4/prop5.jpg",
-        "/src/assets/Images/prop-4/prop6.jpg",
-        "/src/assets/Images/prop-4/prop7.jpg"
+        "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m2609901311od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m2193001887od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m4078986802od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m3425167889od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m3851871950od-w1024_h768_x2.webp",
+        "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m2301664275od-w1024_h768_x2.webp"
       ],
       "url":"properties/prop2.html",
       "added": {
