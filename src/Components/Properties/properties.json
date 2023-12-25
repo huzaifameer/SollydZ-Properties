@@ -167,6 +167,54 @@
         "day":14,
         "year":2022
       }
+    },
+    {
+      "id":"prop8",
+      "type":"Farm House",
+      "bedrooms":5,
+      "price":104000,
+      "tenure":"Freehold",
+      "description":"Ready now! Ashton ranch plan in Flying Horse. 5 bedroom, 4.5 bath home, 3 car garage home. Farmhouse style exterior. Walk-in from insulated 3 car garage into a large laundry room with lots of cabinets and laundry sink. Main level showcases bright and airy great room with vaulted ceilings and fireplace. Formal dining room. Gourmet layout kitchen features smoke gray finished maple cabinets, Calacatta Quartz countertops, large island, brushed gold faucet and hardware, and Jenn Air stainless steel appliances including dual fuel range. Kitchen nook can accommodate a large table. From the nook walk out onto covered patio perfect for relaxing or entertaining. Spacious main level master bedroom has adjoining bath featuring free-standing tub, separate vanities and oversized shower with sleek frameless shower surround. Finished basement has 1 ft. taller ceilings and hosts rec room with wet bar and fireplace, powder bath, three bedrooms and 2 full baths. Two of the lower level bedrooms share a full bath and both have walk-in closets. The third basement bedroom is a junior master suite which hosts a large walk-in closet and ensuite bath. Home comes equipped with a radon mitigation system, smart home package, blown insulation, and AC. Full yard landscaping included!",
+      "location":"2409 Parma Court Colorado Springs, CO 80921",
+      "picture":"https://nhs-dynamic-secure.akamaized.net/images/homes/class1159//73388035-231201.jpg?encoder=freeimage&progressive=true&format=jpg&maxwidth=1932&quality=90",
+      "images": [
+        "https://nhs-dynamic-secure.akamaized.net/Images/Homes/Class1159//72818348-231107.jpg?maxWidth=2880",
+        "https://nhs-dynamic-secure.akamaized.net/Images/Homes/Class1159//73388042-231201.jpg?maxWidth=2880",
+        "https://nhs-dynamic-secure.akamaized.net/Images/Homes/Class1159//73388047-231201.jpg?maxWidth=2880",
+        "https://nhs-dynamic-secure.akamaized.net/Images/Homes/Class1159//73388054-231201.jpg?maxWidth=2880",
+        "https://nhs-dynamic-secure.akamaized.net/Images/Homes/Class1159//73388049-231201.jpg?maxWidth=2880",
+        "https://nhs-dynamic-secure.akamaized.net/Images/Homes/Class1159//73388063-231201.jpg?maxWidth=2880"
+      ],
+      "url":"properties/prop2.html",
+      "added": {
+        "month":"January",
+        "day":24,
+        "year":2023
+      }
+    },
+    {
+      "id":"prop9",
+      "type":"Condo for Sale",
+      "bedrooms":2,
+      "price":252000,
+      "tenure":"Freehold",
+      "description":"Stunning 9th floor 2/2 Condo in a 55+ building in the Hillcrest community. This lovely light filled home has breathtaking views of man-made lakes, walking paths, Miami skyline, Hard Rock Guitar Hotel and Stadium. Enjoy the sunset as you lounge on a glass-enclosed balcony. Entertain guests in the living/dining area appointed with ceramic floors and panoramic views. Linger over coffee by the window of the Eat-In Kitchen with its granite counters and backsplashes. Custom double doors lead to a bright guest room with an across the hall bathroom with a step-in shower, granite vanity and lighted mirror. Enjoy the privacy of the owner’s suite with 2 walk-in custom closets plus an en suite bath. Front lot parking. No Rentals. Fiber optic TV, Internet and Smart-controlled lighting and A/C included.",
+      "location":"4330 Hillcrest Dr APT 910, Hollywood, FL 33021",
+      "picture":"https://photos.zillowstatic.com/fp/ca1aea5e26de3320b4e2264d11af7c5e-cc_ft_1152.webp",
+      "images": [
+        "https://photos.zillowstatic.com/fp/55edc9118fce7970e19b53bb10737e84-cc_ft_576.webp",
+        "https://photos.zillowstatic.com/fp/1080d329e1f0138a43e9c341362b29c7-cc_ft_1152.webp",
+        "https://photos.zillowstatic.com/fp/bf349fc4ac92bf5d2e672a2c92d95c07-cc_ft_576.webp",
+        "https://photos.zillowstatic.com/fp/0bde4e3231bf266630ccae6604bb995d-cc_ft_576.webp",
+        "https://photos.zillowstatic.com/fp/4ce621693d1c955d9b7f2ab915462d4e-cc_ft_576.webp",
+        "https://photos.zillowstatic.com/fp/2b41a262d99f98c62c94b2c646eedf65-cc_ft_576.webp"
+      ],
+      "url":"properties/prop2.html",
+      "added": {
+        "month":"September",
+        "day":14,
+        "year":2023
+      }
     }
 
   ]
