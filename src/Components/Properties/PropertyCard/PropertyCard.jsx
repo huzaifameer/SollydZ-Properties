@@ -14,17 +14,16 @@ function PropertyCard(){
                             <div className="card" style={{ width: "18rem" }}>
                                 <img src={property.picture} className="card-img-top" alt="Property" />
                                 <div className="card-body">
-                                    <h5 className="card-title">{property.type}</h5>
+                                    <h4 className="card-title">{property.type}</h4>
                                 </div>
                                 <ul className="list-group list-group-flush">
-                                    <li className="list-group-item">Price: ${property.price}</li>
-                                    <li className="list-group-item">Bedrooms: {property.bedrooms}</li>
+                                    <li className="list-group-item"><h6>Price: ${property.price}</h6></li>
+                                    <li className="list-group-item">{property.bedrooms} Bedrooms</li>
                                 </ul>
                                 <div className="card-body">
                                     <Link to={property.url} className="card-link">
-                                        <button className='btn btn-outline-primary'>View Details</button>
+                                        <button className='btn btn-outline-dark'>View Details</button>
                                     </Link>
-                                    {/* Add more links as needed */}
                                 </div>
                             </div>
                         </div>

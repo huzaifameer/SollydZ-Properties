@@ -3,16 +3,19 @@
     {
       "id":"prop1",
       "type":"House For Sale",
-      "bedrooms":3,
+      "bedrooms":4,
       "price":750000,
       "tenure":"Freehold",
-      "description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+      "description":"A beautiful bungalow in the Bayview area with some fantastic features! The freshly stained wooden floors and open kitchen concept add a modern touch, while the woodwork throughout the house creates a warm and inviting atmosphere. The window seats and stained glass in the living room and dining area are likely stunning architectural details that enhance the overall charm of the home. Moving to the second floor to a brighter modern Level it has office space and two additional bedroom. It also has the primary master room with attached full bathroom is undoubtedly a luxurious feature, providing a private and comfortable retreat within the home. This property has such character and thoughtful design elements often appeal to those who appreciate a blend of classic and modern aesthetics.",
       "location":"Petts Wood Road, Petts Wood, Orpington",
-      "picture":"https://img.freepik.com/free-photo/modern-residential-district-with-green-roof-balcony-generated-by-ai_188544-10276.jpg?w=996&t=st=1703490064~exp=1703490664~hmac=dc2be025675c88f980a21f00b7ce24a4d69b6e7995efeff1bc0a54cc61b953e5",
+      "picture":"/src/assets/Images/prop-1/prop-1.1.jpg",
       "images": [
-        "images/prop1pic1small.jpg",
-        "images/prop1pic2.jpg",
-        "images/prop1pic3.jpg"
+        "/src/assets/Images/prop-1/prop-1.2.jpg",
+        "/src/assets/Images/prop-1/prop-1.3.jpg",
+        "/src/assets/Images/prop-1/prop-1.4.jpg",
+        "/src/assets/Images/prop-1/prop-1.5.jpg",
+        "/src/assets/Images/prop-1/prop-1.6.jpg",
+        "/src/assets/Images/prop-1/prop-1.7.jpg"
       ],
       "url":"/properties",
       "added": {
@@ -23,17 +26,20 @@
     },
     {
       "id":"prop2",
-      "type":"Flat For Lease",
-      "bedrooms":2,
+      "type":"House For Sale",
+      "bedrooms":5,
       "price":399995,
       "tenure":"Freehold",
-      "description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
-      "location":"Crofton Road Orpington BR6",
-      "picture":"https://img.freepik.com/free-photo/sunny-urban-landscape_23-2149504776.jpg?w=360&t=st=1703490189~exp=1703490789~hmac=cbac6406b612905baaabda93812bb19ddffbf46f8ffe46b6c29ac484c246d12c",
+      "description":"Old world charm meets modern conveniences with this 5 bed, 2 bath Bay View bungalow! Imagine lounging on the inviting front porch during warmer months & welcoming guests in through the stunning stained-glass door. Gorgeous hardwood floors, natural woodwork & tall baseboards for that right-at-home feel! Prepare your next culinary masterpiece in the updated kitchen, to be served in the formal dining room w/ built-ins as you host your next dinner party. Split bedroom layout with 2 up & 2 down means potential to use a bedroom as a home office or walk-in closet! Dry & clean lower level with charming rec room expands your living space. Private & fully-fenced backyard with patio is great for entertaining or playing fetch with Fido. No lack of parking here-- 2 car detached garage. Welcome home!",
+      "location":"228 E Montana St. Milwaukee, WI 53207",
+      "picture":"/src/assets/Images/prop-2/prop-2.1.jpg",
       "images": [
-        "images/prop2pic1small.jpg",
-        "images/prop2pic2.jpg",
-        "images/prop2pic3.jpg"
+        "/src/assets/Images/prop-2/prop-2.2.jpg",
+        "/src/assets/Images/prop-2/prop-2.3.jpg",
+        "/src/assets/Images/prop-2/prop-2.4.jpg",
+        "/src/assets/Images/prop-2/prop-2.5.jpg",
+        "/src/assets/Images/prop-2/prop-2.6.jpg",
+        "/src/assets/Images/prop-2/prop-2.7.jpg"
       ],
       "url":"/properties",
       "added": {
@@ -44,17 +50,20 @@
     },
     {
       "id": "prop3",
-      "type": "Flat",
-      "bedrooms": 2,
-      "price": 399995,
+      "type": "Farm House",
+      "bedrooms": 3,
+      "price": 300500,
       "tenure": "Freehold",
-      "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
-      "location": "Crofton Road Orpington BR6",
-      "picture": "https://img.freepik.com/free-photo/sunny-urban-landscape_23-2149504776.jpg?w=360&t=st=1703490189~exp=1703490789~hmac=cbac6406b612905baaabda93812bb19ddffbf46f8ffe46b6c29ac484c246d12c",
+      "description": "Welcome home! This well cared for 3-bedroom, 1.5-bath single-family home is a haven nestled between the scenic beauty of Humboldt Park and the recreational allure of Emigh Playfield. Boasting almost instant freeway access, this residence is not just a home; it's a gateway to convenience. Imagine strolling to nearby shops, restaurants, and the library, or taking a short drive to the airport and the picturesque Lake Michigan. The small mudroom greets you, offering a perfect spot for hanging jackets and kicking off shoes. Also, please feel free to indulge in the three-season room ideal for your morning coffee retreat or spacious enough to house a hot tub. Large side yard, complemented by a 2.5-car garage with additional parking in the rear. Enjoy all the benefits of the Bayview Community.",
+      "location": "3438 S Quincy Avenue, Milwaukee, WI 53207",
+      "picture": "/src/assets/Images/prop-3/prop1.jpg",
       "images": [
-        "images/prop2pic1small.jpg",
-        "images/prop2pic2.jpg",
-        "images/prop2pic3.jpg"
+        "/src/assets/Images/prop-3/prop2.jpg",
+        "/src/assets/Images/prop-3/prop3.jpg",
+        "/src/assets/Images/prop-3/prop4.jpg",
+        "/src/assets/Images/prop-3/prop5.jpg",
+        "/src/assets/Images/prop-3/prop6.jpg",
+        "/src/assets/Images/prop-3/prop7.jpg"
       ],
       "url": "properties/prop2.html",
       "added": {
@@ -65,17 +74,20 @@
     },
     {
       "id":"prop4",
-      "type":"Flat",
-      "bedrooms":2,
+      "type":"Hard Wood House",
+      "bedrooms":4,
       "price":399995,
       "tenure":"Freehold",
-      "description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
-      "location":"Crofton Road Orpington BR6",
-      "picture":"https://img.freepik.com/free-photo/sunny-urban-landscape_23-2149504776.jpg?w=360&t=st=1703490189~exp=1703490789~hmac=cbac6406b612905baaabda93812bb19ddffbf46f8ffe46b6c29ac484c246d12c",
+      "description":"Add this beautiful Bay View duplex to your portfolio and you won't be disappointed. Two 1200 sq foot 2 bed/ 1 bath units are both fully occupied through 2024. Exuding old world charm, each unit features large kitchens and baths, high ceilings, and gorgeous hardwood floors. A cozy yard invites gardening projects and a 1.5 car garage plus a slab provide easy parking. Tenants are responsible for all utilities plus lawn and snow care. The unfinished third floor provides extra storage or potential to expand. Drain tile has been replaced and the basement has been beamed for peace of mind. Newer paint, windows, hot water heaters, and AC units plus term leases and established, professional management mean this one is set and forget for any investor.",
+      "location":"2823 S Clement Avenue, Milwaukee, NY 53500",
+      "picture":"/src/assets/Images/prop-4/prop1.jpg",
       "images": [
-        "images/prop2pic1small.jpg",
-        "images/prop2pic2.jpg",
-        "images/prop2pic3.jpg"
+        "/src/assets/Images/prop-4/prop2.jpg",
+        "/src/assets/Images/prop-4/prop3.jpg",
+        "/src/assets/Images/prop-4/prop4.jpg",
+        "/src/assets/Images/prop-4/prop5.jpg",
+        "/src/assets/Images/prop-4/prop6.jpg",
+        "/src/assets/Images/prop-4/prop7.jpg"
       ],
       "url":"properties/prop2.html",
       "added": {
@@ -90,97 +102,16 @@
       "bedrooms":2,
       "price":399995,
       "tenure":"Freehold",
-      "description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+      "description":"",
       "location":"Crofton Road Orpington BR6",
-      "picture":"https://img.freepik.com/free-photo/sunny-urban-landscape_23-2149504776.jpg?w=360&t=st=1703490189~exp=1703490789~hmac=cbac6406b612905baaabda93812bb19ddffbf46f8ffe46b6c29ac484c246d12c",
+      "picture":"/src/assets/Images/prop-4/prop1.jpg",
       "images": [
-        "images/prop2pic1small.jpg",
-        "images/prop2pic2.jpg",
-        "images/prop2pic3.jpg"
-      ],
-      "url":"properties/prop2.html",
-      "added": {
-        "month":"September",
-        "day":14,
-        "year":2022
-      }
-    },
-    {
-      "id":"prop6",
-      "type":"Flat",
-      "bedrooms":2,
-      "price":399995,
-      "tenure":"Freehold",
-      "description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
-      "location":"Crofton Road Orpington BR6",
-      "picture":"https://img.freepik.com/free-photo/sunny-urban-landscape_23-2149504776.jpg?w=360&t=st=1703490189~exp=1703490789~hmac=cbac6406b612905baaabda93812bb19ddffbf46f8ffe46b6c29ac484c246d12c",
-      "images": [
-        "images/prop2pic1small.jpg",
-        "images/prop2pic2.jpg",
-        "images/prop2pic3.jpg"
-      ],
-      "url":"properties/prop2.html",
-      "added": {
-        "month":"September",
-        "day":14,
-        "year":2022
-      }
-    },
-    {
-      "id":"prop7",
-      "type":"Flat",
-      "bedrooms":2,
-      "price":399995,
-      "tenure":"Freehold",
-      "description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
-      "location":"Crofton Road Orpington BR6",
-      "picture":"https://img.freepik.com/free-photo/sunny-urban-landscape_23-2149504776.jpg?w=360&t=st=1703490189~exp=1703490789~hmac=cbac6406b612905baaabda93812bb19ddffbf46f8ffe46b6c29ac484c246d12c",
-      "images": [
-        "images/prop2pic1small.jpg",
-        "images/prop2pic2.jpg",
-        "images/prop2pic3.jpg"
-      ],
-      "url":"properties/prop2.html",
-      "added": {
-        "month":"September",
-        "day":14,
-        "year":2022
-      }
-    },
-    {
-      "id":"prop8",
-      "type":"Flat",
-      "bedrooms":2,
-      "price":399995,
-      "tenure":"Freehold",
-      "description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
-      "location":"Crofton Road Orpington BR6",
-      "picture":"https://img.freepik.com/free-photo/sunny-urban-landscape_23-2149504776.jpg?w=360&t=st=1703490189~exp=1703490789~hmac=cbac6406b612905baaabda93812bb19ddffbf46f8ffe46b6c29ac484c246d12c",
-      "images": [
-        "images/prop2pic1small.jpg",
-        "images/prop2pic2.jpg",
-        "images/prop2pic3.jpg"
-      ],
-      "url":"properties/prop2.html",
-      "added": {
-        "month":"September",
-        "day":14,
-        "year":2022
-      }
-    },
-    {
-      "id":"prop9",
-      "type":"Flat",
-      "bedrooms":2,
-      "price":399995,
-      "tenure":"Freehold",
-      "description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
-      "location":"Crofton Road Orpington BR6",
-      "picture":"https://img.freepik.com/free-photo/sunny-urban-landscape_23-2149504776.jpg?w=360&t=st=1703490189~exp=1703490789~hmac=cbac6406b612905baaabda93812bb19ddffbf46f8ffe46b6c29ac484c246d12c",
-      "images": [
-        "images/prop2pic1small.jpg",
-        "images/prop2pic2.jpg",
-        "images/prop2pic3.jpg"
+        "/src/assets/Images/prop-4/prop2.jpg",
+        "/src/assets/Images/prop-4/prop3.jpg",
+        "/src/assets/Images/prop-4/prop4.jpg",
+        "/src/assets/Images/prop-4/prop5.jpg",
+        "/src/assets/Images/prop-4/prop6.jpg",
+        "/src/assets/Images/prop-4/prop7.jpg"
       ],
       "url":"properties/prop2.html",
       "added": {
