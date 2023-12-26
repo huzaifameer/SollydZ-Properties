@@ -17,8 +17,7 @@ function Properties(){
                 </BannerArea>
             </HeroArea>
             <section className='services-area'>
-                <TitleBar title='Properties' />
-                <br/>
+                <TitleBar title='Find Your Property' />
                 <PropertyCard/>
             </section>
         </>

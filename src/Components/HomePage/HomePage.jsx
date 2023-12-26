@@ -2,8 +2,10 @@ import HeroArea from "../HeroArea/HeroArea.jsx";
 import BannerArea from "../Banner/BannerArea.jsx";
 import {Link} from "react-router-dom";
 import ServicesArea from "../ServicesArea/ServicesArea.jsx";
+import {useState} from "react";
 
 function HomePage(){
+
     return(
         <>
             <HeroArea hero='defaultHeroClass'>
