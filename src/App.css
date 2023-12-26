@@ -115,15 +115,15 @@
     text-decoration: none;
     letter-spacing: 1.5px;
     color: #ffffff;
-    background-color: #001C1F;
+    background-color: #002A2F;
     padding: 0.5rem 0.4rem;
-    border: 3px solid #ffffff;
+    border: 3px solid #002A2F;
     transition: 0.5s all ease-in-out;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 12px;
 }
 .favorite-btn:hover{
-    background: #ffffff;
+    background: transparent;
     color: #002A2F;
-    border: 3px solid #002A2F;
 }
