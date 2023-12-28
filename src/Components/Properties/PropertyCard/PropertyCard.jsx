@@ -50,13 +50,13 @@ function PropertyCard() {
                                 </ul>
                                 <div className="card-body">
                                     <Link to={property.url} className="card-link">
-                                        <button className='btn btn-outline-dark'>View Details</button>
+                                        <button  className='btn btn-outline-dark'>View Details</button>
                                     </Link>
                                 </div>
                             </div>
                             <button
                                 className={
-                                `favorite-btn 
+                                    `favorite-btn 
                                 ${favorites.some((fav) => fav.id === property.id) ? 'active' : ''}`
                                 }
                                 onClick={() => toggleFavorite(property)}
