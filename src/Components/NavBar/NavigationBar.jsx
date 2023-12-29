@@ -55,7 +55,7 @@ const NavigationBar = () => {
                     <Route path='/aboutus' element={<AboutUs/>} />
                     <Route path='/properties' element={<Properties/>} />
                     <Route path='/contactpage' element={<ContactPage/>} />
-                    <Route path='/properties/:url' element={<SinglePage />} />
+                    {/*<Route path='/properties/:url' element={<SinglePage />} />*/}
                 </Routes>
             </Router>
 

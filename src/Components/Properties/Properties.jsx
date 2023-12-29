@@ -26,7 +26,7 @@ class Properties extends Component {
                 </HeroArea>
                 <section className='services-area'>
                         <TitleBar title="Find Your Properties"/>
-                        <div className="featured-properties-center">
+                        <div className="featured-properties featured-properties-center">
                             {loading ? <h1>Loading</h1>: properties}
                         </div>
                 </section>

@@ -8,21 +8,19 @@ export default class SinglePage extends Component {
     constructor(props) {
         super(props);
         console.log(props);
+        this.state = {
+            url: this.props.match.params.url
+        };
     }
 
-    componentDidMount() {
+    /*componentDidMount() {
         // Fetch and display details of the single property using this.props.match.params.url
-        const propertyURL = this.props.match.params.url;
-        // Now you can use propertyURL to fetch the details of the corresponding property
-    }
-
-    static contextType = PropertyContext;
+    }*/
+    static contextType=PropertyContext;
 
     render() {
-        const { getProperty } = this.context;
-        // Assuming you have a method like getProperty in your context
-        const property = getProperty(this.props.match.params.url);
-        console.log(property);
+        const {getProperty} = this.context;
+        const property = getProperty(this.state.url);
         return (
             <div>
                 <HeroArea />

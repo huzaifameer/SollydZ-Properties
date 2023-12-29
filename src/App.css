@@ -128,20 +128,21 @@
     color: #002A2F;
 }
 
-/* featured rooms */
+/* featured properties */
 
 .featured-properties {
     padding: 5rem 0;
-    margin: 0 70px;
+    margin: 0 80px !important;
 }
 .featured-properties-center {
     width: 80vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-row-gap: 2rem;
-    grid-column-gap: 50px;
-    flex: 1;
+    justify-content: space-between;
+    grid-column-gap: 70px;
+    /*flex: 1;*/
 }
 @media screen and (min-width: 776px) {
     .featured-properties-center {
@@ -158,7 +159,7 @@
 /* end pf featured rooms */
 
 /*single property style start*/
-.card-body{
+.card-body-spcl{
     display: flex;
     align-items: center;
     justify-content: center;
