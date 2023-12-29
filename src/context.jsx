@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import propertiesList from './properties.json';
 
 const PropertyContext = React.createContext();
@@ -34,19 +34,22 @@ class PropertyProvider extends Component {
     }
 
     formatData(items) {
-        let tempItems = items.map(item => {
+        return items.map(item => {
             let id = item.id;
             let images = item.images.map(image => image);
 
-            let property = { ...item, id, images };
-            return property;
+            return {...item, id, images};
         });
-        return tempItems;
+    }
+    getProperty = (url) =>{
+        let tempProperty = [...this.state.properties];
+        const property= tempProperty.find(property => property.url===url);
+        return property;
     }
 
     render() {
         return (
-            <PropertyContext.Provider value={{ ...this.state }}>
+            <PropertyContext.Provider value={{ ...this.state, getProperty: this.getProperty() }}>
                 {this.props.children}
             </PropertyContext.Provider>
         );

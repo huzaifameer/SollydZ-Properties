@@ -14,7 +14,7 @@ export default function SingleProperty({property}){
                     <li className="list-group-item">{bedrooms} Bedroom Residence</li>
                 </ul>
                 <div className="card-body">
-                    <Link to={url} className="card-link btn btn-outline-dark">View Details</Link>
+                    <Link to={`/properties/${url}`} className="card-link btn btn-outline-dark">View Details</Link>
                 </div>
             <div className="favorite-btn">
                 Add to favorites

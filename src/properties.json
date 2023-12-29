@@ -17,7 +17,7 @@
         "/src/assets/Images/prop-1/prop-1.6.jpg",
         "/src/assets/Images/prop-1/prop-1.7.jpg"
       ],
-      "url":"/properties/prop1.html",
+      "url":"forsale1",
       "added": {
         "month":"October",
         "day":12,
@@ -42,7 +42,7 @@
         "/src/assets/Images/prop-2/prop-2.6.jpg",
         "/src/assets/Images/prop-2/prop-2.7.jpg"
       ],
-      "url":"/properties",
+      "url":"forsale1",
       "added": {
         "month":"September",
         "day":14,
@@ -67,7 +67,7 @@
         "/src/assets/Images/prop-3/prop6.jpg",
         "/src/assets/Images/prop-3/prop7.jpg"
       ],
-      "url": "properties/prop3.html",
+      "url": "forsale3",
       "added": {
         "month": "September",
         "day": 14,
@@ -92,7 +92,7 @@
         "/src/assets/Images/prop-4/prop6.jpg",
         "/src/assets/Images/prop-4/prop7.jpg"
       ],
-      "url":"properties/prop4.html",
+      "url":"forsale4",
       "added": {
         "month":"August",
         "day":30,
@@ -117,7 +117,7 @@
         "https://ap.rdcpix.com/2e0547fd0cf8fe462797d90dc1347c9fl-m367310628od-w1024_h768_x2.webp",
         "https://ap.rdcpix.com/2e0547fd0cf8fe462797d90dc1347c9fl-m574618318od-w1024_h768_x2.webp"
       ],
-      "url":"properties/prop5.html",
+      "url":"forsale5",
       "added": {
         "month":"June",
         "day":24,
@@ -142,7 +142,7 @@
         "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m3851871950od-w1024_h768_x2.webp",
         "https://ap.rdcpix.com/37bbfd0af153f68453eca368cd3abe5cl-m2301664275od-w1024_h768_x2.webp"
       ],
-      "url":"properties/prop6.html",
+      "url":"forsale6",
       "added": {
         "month":"December",
         "day":14,
@@ -167,7 +167,7 @@
         "https://ap.rdcpix.com/fa8e845b8629b65b2759a69561a66949l-m2007558270od-w1024_h768_x2.webp",
         "https://ap.rdcpix.com/fa8e845b8629b65b2759a69561a66949l-m3802709411od-w1024_h768_x2.webp"
       ],
-      "url":"properties/prop7.html",
+      "url":"forsale7",
       "added": {
         "month":"September",
         "day":14,
@@ -192,7 +192,7 @@
         "https://nhs-dynamic-secure.akamaized.net/Images/Homes/Class1159//73388049-231201.jpg?maxWidth=2880",
         "https://nhs-dynamic-secure.akamaized.net/Images/Homes/Class1159//73388063-231201.jpg?maxWidth=2880"
       ],
-      "url":"properties/prop8.html",
+      "url":"forsale8",
       "added": {
         "month":"January",
         "day":24,
@@ -217,7 +217,7 @@
         "https://photos.zillowstatic.com/fp/4ce621693d1c955d9b7f2ab915462d4e-cc_ft_576.webp",
         "https://photos.zillowstatic.com/fp/2b41a262d99f98c62c94b2c646eedf65-cc_ft_576.webp"
       ],
-      "url":"properties/prop9.html",
+      "url":"forsale9",
       "added": {
         "month":"September",
         "day":14,

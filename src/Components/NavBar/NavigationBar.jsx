@@ -7,6 +7,8 @@ import AboutUs from "../AboutUs/AboutUs.jsx";
 import Properties from "../Properties/Properties.jsx";
 import ContactPage from "../ContactPage/ContactPage.jsx";
 import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
+import SingleProperty from "../SingleProperty/SingleProperty.jsx";
+import SinglePage from "../Properties/SinglePage.jsx";
 
 const NavigationBar = () => {
     return (
@@ -53,6 +55,7 @@ const NavigationBar = () => {
                     <Route path='/aboutus' element={<AboutUs/>} />
                     <Route path='/properties' element={<Properties/>} />
                     <Route path='/contactpage' element={<ContactPage/>} />
+                    <Route path='/properties/:url' element={<SinglePage />} />
                 </Routes>
             </Router>
 
