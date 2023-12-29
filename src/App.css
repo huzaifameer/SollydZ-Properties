@@ -121,9 +121,46 @@
     transition: 0.5s all ease-in-out;
     cursor: pointer;
     margin-top: 10px;
-    border-radius: 12px;
+    text-align: center;
 }
 .favorite-btn:hover{
     background: transparent;
     color: #002A2F;
 }
+
+/* featured rooms */
+
+.featured-properties {
+    padding: 5rem 0;
+    margin: 0 70px;
+}
+.featured-properties-center {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 50px;
+    flex: 1;
+}
+@media screen and (min-width: 776px) {
+    .featured-properties-center {
+        width: 90vw;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
+}
+@media screen and (min-width: 992px) {
+    .featured-properties-center {
+        width: 95vw;
+        max-width: 1170px;
+    }
+}
+/* end pf featured rooms */
+
+/*single property style start*/
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*single property style end*/

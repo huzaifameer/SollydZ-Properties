@@ -1,19 +1,24 @@
 import React, { Component } from "react";
 import { PropertyContext } from "../../context.jsx";
 import TitleBar from "../TitleBar/TitleBar.jsx";
+import SingleProperty from "../SingleProperty/SingleProperty.jsx";
 
 class FeaturedProperty extends Component {
     static contextType = PropertyContext;
 
     render() {
-        const { featuredProperties: properties } = this.context;
-        console.log(properties);
+        let { loading, featuredProperties: properties } = this.context;
+        properties=properties.map(property =>{
+            return <SingleProperty key={property.id} property={property}/>
+        })
 
         return (
-            <div>
+            <section className='featured-properties'>
                 <TitleBar title="Featured Properties"/>
-                {/* Render your featured properties */}
-            </div>
+                <div className="featured-properties-center">
+                    {loading ? <h1>Loading</h1>: properties}
+                </div>
+            </section>
         );
     }
 }

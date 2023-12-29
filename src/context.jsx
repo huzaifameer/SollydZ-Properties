@@ -23,16 +23,14 @@ class PropertyProvider extends Component {
         }
 
         let properties = this.formatData(propertiesList);
-        let featuredProperties= properties.filter(property => property.featured ===true);
+        let featuredProperties = properties.filter(property => property.featured === true);
 
-        this.setState(
-            {
-                properties,
-                featuredProperties,
-                sortedProperties:properties,
-                loading:false
-            }
-        )
+        this.setState({
+            properties,
+            featuredProperties,
+            sortedProperties: properties,
+            loading: false
+        });
     }
 
     formatData(items) {
