@@ -165,3 +165,18 @@
     justify-content: center;
 }
 /*single property style end*/
+
+/*styles for filtreing*/
+.filter-container{
+    display: inline-block;
+    color: blanchedalmond;
+    background: rgba(0,0,0,0.5);
+    padding:5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1000px;
+    margin-left: 700px;
+    margin-bottom: -1000px;
+}
+/*styles for filtreing*/

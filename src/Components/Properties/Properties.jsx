@@ -25,10 +25,12 @@ class Properties extends Component {
                     </BannerArea>
                 </HeroArea>
                 <section className='services-area'>
+                    <section className='featured-properties'>
                         <TitleBar title="Find Your Properties"/>
-                        <div className="featured-properties featured-properties-center">
+                        <div className="featured-properties-center">
                             {loading ? <h1>Loading</h1>: properties}
                         </div>
+                    </section>
                 </section>
 
             </>

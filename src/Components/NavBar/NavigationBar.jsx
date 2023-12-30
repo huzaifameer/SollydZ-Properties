@@ -8,7 +8,7 @@ import Properties from "../Properties/Properties.jsx";
 import ContactPage from "../ContactPage/ContactPage.jsx";
 import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
 import SingleProperty from "../SingleProperty/SingleProperty.jsx";
-import SinglePage from "../Properties/SinglePage.jsx";
+import SinglePage from "../SinglePage/SinglePage.jsx";
 
 const NavigationBar = () => {
     return (

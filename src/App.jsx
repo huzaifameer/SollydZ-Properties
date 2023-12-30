@@ -3,7 +3,7 @@ import NavigationBar from "./Components/NavBar/NavigationBar.jsx";
 import Footer from "./Components/FooterArea/Footer.jsx";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SinglePage from "./Components/Properties/SinglePage.jsx";
+import SinglePage from "./Components/SinglePage/SinglePage.jsx";
 
 function App() {
     return (
