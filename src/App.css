@@ -180,3 +180,41 @@
     margin-bottom: -1000px;
 }
 /*styles for filtreing*/
+
+/*-----------------*/
+/* Add some styling for the favorites section */
+.favorit-section{
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+.favorite-property {
+    border: 2px solid #002A2F;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.favorite-property img {
+    width: 200px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.remove-favorite-btn {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.remove-favorite-btn:hover{
+    background-color: #239443;
+}
+
+/*-----------------*/
