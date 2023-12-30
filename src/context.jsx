@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import propertiesList from './properties.json';
 
 const PropertyContext = React.createContext();
@@ -12,13 +12,9 @@ class PropertyProvider extends Component {
     };
 
     componentDidMount() {
-        if (!Array.isArray(propertiesList)) {
-            console.error("propertiesList is not an array:", propertiesList);
-            return;
-        }
-
-        if (propertiesList.length === 0) {
-            console.warn("propertiesList is an empty array.");
+        if (!Array.isArray(propertiesList) || propertiesList.length === 0) {
+            console.error("Invalid propertiesList:", propertiesList);
+            this.setState({ loading: false });
             return;
         }
 
@@ -38,18 +34,19 @@ class PropertyProvider extends Component {
             let id = item.id;
             let images = item.images.map(image => image);
 
-            return {...item, id, images};
+            return { ...item, id, images };
         });
     }
-    getProperty = (url) =>{
+
+    getProperty = (tenure) => {
         let tempProperty = [...this.state.properties];
-        const property= tempProperty.find(property => property.url===url);
+        const property = tempProperty.find(property => property.tenure === tenure);
         return property;
     }
 
     render() {
         return (
-            <PropertyContext.Provider value={{ ...this.state, getProperty: this.getProperty() }}>
+            <PropertyContext.Provider value={{ ...this.state, getProperty: this.getProperty }}>
                 {this.props.children}
             </PropertyContext.Provider>
         );

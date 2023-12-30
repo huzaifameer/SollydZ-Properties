@@ -13,7 +13,7 @@ import SinglePage from "../SinglePage/SinglePage.jsx";
 const NavigationBar = () => {
     return (
         <>
-            <Router>
+
                 <nav className="navbar navbar-expand-lg ">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="/">
@@ -50,14 +50,7 @@ const NavigationBar = () => {
 
                     </div>
                 </nav>
-                <Routes>
-                    <Route path='/' element={<HomePage/>} />
-                    <Route path='/aboutus' element={<AboutUs/>} />
-                    <Route path='/properties' element={<Properties/>} />
-                    <Route path='/contactpage' element={<ContactPage/>} />
-                    {/*<Route path='/properties/:url' element={<SinglePage />} />*/}
-                </Routes>
-            </Router>
+
 
         </>
     )
