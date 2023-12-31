@@ -19,9 +19,9 @@ export default function SingleProperty({ property, onAddToFavorites, isInFavorit
             <div className="card-body card-body-spcl">
                 <h5 className="card-title">{title}</h5>
             </div>
-            <ul className="list-group list-group-flush">
-                <li className="list-group-item">Price : $ {price}</li>
-                <li className="list-group-item">{bedrooms} Bedroom Residence</li>
+            <ul className="list-group list-group-flush" style={{textAlign:'left',paddingLeft:'12px'}}>
+                <p>Price : $ {price}</p>
+                <p className="">{bedrooms} Bedrooms</p>
             </ul>
             <div className="card-body card-body-spcl">
                 <Link

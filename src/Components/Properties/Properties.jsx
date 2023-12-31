@@ -12,6 +12,13 @@ class Properties extends Component {
 
     state = {
         favorites: [],
+        filter: {
+            type: "all",
+            price: "",
+            location: "",
+            addedDate: "",
+            bedrooms: "",
+        },
     };
 
     handleAddToFavorites = (propertyId) => {
@@ -33,6 +40,15 @@ class Properties extends Component {
         // Remove the property from favorites
         this.setState((prevState) => ({
             favorites: prevState.favorites.filter((property) => property.id !== propertyId),
+        }));
+    };
+    handleFilterChange = (name, value) => {
+        // Update the filter state when the filter changes
+        this.setState((prevState) => ({
+            filter: {
+                ...prevState.filter,
+                [name]: value,
+            },
         }));
     };
 
@@ -61,7 +77,8 @@ class Properties extends Component {
                     </BannerArea>
                 </HeroArea>
                 <br/>
-                {/* Favorites property list Section */}
+
+                {/* Favorites property list Section starting */}
                 <section>
                     <TitleBar title="Create Your Favorite List"/>
                     {this.state.favorites.map((favorite) => (
@@ -82,14 +99,18 @@ class Properties extends Component {
 
                     ))}
                 </section>
+                {/* Favorites property list Section ending */}
 
-                <section className="services-area">
+                {/*section to display all the properties start*/}
+                <section className="services-area">{/*using the service areas style*/}
                     <section className="featured-properties">
                         <div className="featured-properties-center">
+                            {/*using a condition to check the availability of the properties*/}
                             {loading ? <h1>Loading</h1> : properties}
                         </div>
                     </section>
                 </section>
+                {/*section to display all the properties ending*/}
 
             </>
         );
