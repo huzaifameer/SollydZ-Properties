@@ -17,7 +17,7 @@ export default function SinglePage() {
         );
     }
 
-    const { type, description, bedrooms, price, location, images } = property;
+    const { title,type, description, bedrooms, price, location, images } = property;
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
     const handleImageClick = (index) => {
@@ -82,11 +82,12 @@ export default function SinglePage() {
                 {/*image slider ending*/}
                 {/* Displaying all the property details */}
                 <br/>
-                <h2 style={{textAlign:'center'}}>{type}</h2>{/*property heading and type*/}
+                <h2 style={{textAlign:'center'}}>{title}</h2>{/*property heading and type*/}
+                <p style={{paddingLeft:'50px'}}>Property Type -  {type}</p>{/*no of bedrooms*/}
                 <p style={{paddingLeft:'50px'}}>Bedrooms -  {bedrooms}</p>{/*no of bedrooms*/}
                 <p style={{paddingLeft:'50px'}}>Price - ${price}</p>{/*prices of the property*/}
                 <p style={{paddingLeft:'50px'}}>Location - {location} {}</p>{/*property location*/}
-                <p style={{textAlign:'justify',padding:'40px 50px',backgroundColor:'#ffffff',borderRadius:'22px'}}>Description -  {description}</p>
+                <p style={{textAlign:'justify',padding:'40px 50px',backgroundColor:'#ffffff',borderRadius:'22px'}}><h4>More Information</h4> <hr/>  {description}</p>
                 <br/>
             </div>
         </>

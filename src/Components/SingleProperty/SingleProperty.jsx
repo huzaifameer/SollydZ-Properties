@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function SingleProperty({ property, onAddToFavorites, isInFavorites, onRemoveFromFavorites }) {
-    const { id, type, picture, price, bedrooms, tenure } = property;
+    const { id, type,title, picture, price, bedrooms, tenure } = property;
 
     const handleViewDetails = () => {
         // Pass the property id and add/remove to favorites callback
@@ -17,7 +17,7 @@ export default function SingleProperty({ property, onAddToFavorites, isInFavorit
         <div className="card " style={{ width: "18rem" }}>
             <img src={picture} className="card-img-top" style={{ height: "200px" }} alt={type} />
             <div className="card-body card-body-spcl">
-                <h5 className="card-title">{type}</h5>
+                <h5 className="card-title">{title}</h5>
             </div>
             <ul className="list-group list-group-flush">
                 <li className="list-group-item">Price : $ {price}</li>

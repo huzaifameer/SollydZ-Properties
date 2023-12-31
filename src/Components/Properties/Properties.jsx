@@ -6,6 +6,7 @@ import HeroArea from "../HeroArea/HeroArea.jsx";
 import BannerArea from "../Banner/BannerArea.jsx";
 import { Link } from "react-router-dom";
 
+
 class Properties extends Component {
     static contextType = PropertyContext;
 
@@ -15,9 +16,9 @@ class Properties extends Component {
 
     handleAddToFavorites = (propertyId) => {
         // Check if the property is already in favorites
-        const isPropertyInFavorites = this.state.favorites.some((property) => property.id === propertyId);
+        const isThePropertyInFavorites = this.state.favorites.some((property) => property.id === propertyId);
 
-        if (!isPropertyInFavorites) {
+        if (!isThePropertyInFavorites) {
             // Find the selected property using the propertyId
             const selectedProperty = this.context.properties.find((property) => property.id === propertyId);
 
@@ -59,18 +60,10 @@ class Properties extends Component {
                         </Link>
                     </BannerArea>
                 </HeroArea>
-                <section className="services-area">
-                    <section className="featured-properties">
-                        <TitleBar title="Find Your Properties" />
-                        <div className="featured-properties-center">
-                            {loading ? <h1>Loading</h1> : properties}
-                        </div>
-                    </section>
-                </section>
-
-                {/* Favorites Section */}
+                <br/>
+                {/* Favorites property list Section */}
                 <section>
-                    <TitleBar title="Create Your Favorite Area"/>
+                    <TitleBar title="Create Your Favorite List"/>
                     {this.state.favorites.map((favorite) => (
                         <div key={favorite.id} className ='favorit-section'>
                             <div  className="favorite-property">
@@ -89,6 +82,15 @@ class Properties extends Component {
 
                     ))}
                 </section>
+
+                <section className="services-area">
+                    <section className="featured-properties">
+                        <div className="featured-properties-center">
+                            {loading ? <h1>Loading</h1> : properties}
+                        </div>
+                    </section>
+                </section>
+
             </>
         );
     }

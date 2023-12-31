@@ -1,13 +1,14 @@
 
 import contactPic from '/src/assets/Images/contactPic.jpg'
+import TitleBar from "../TitleBar/TitleBar.jsx";
 
 function ContactPage(){
     return(
         <>
             <div className="container-fluid">
                 <div className="container">
-                    <div>
-                        <h2 className='text-center mb-5 shadow-sm p-3'>Contact Us</h2>
+                    <div className='mt-3'>
+                        <TitleBar title="Contact Us"/>
                     </div>
                     <div className="row">
                         <div className="col-md-7 shadow rounded p-5">

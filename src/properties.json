@@ -1,7 +1,8 @@
 [
   {
       "id": "prop1",
-      "type": "House For Sale",
+      "type": "House",
+      "title": "House For Sale",
       "bedrooms": 4,
       "price": 750000,
       "featured": false,
@@ -26,7 +27,8 @@
   },
   {
       "id": "prop2",
-      "type": "House For Sale",
+      "type": "House",
+      "title": "House For Sale",
       "bedrooms": 5,
       "price": 390000,
       "featured": false,
@@ -51,7 +53,8 @@
   },
   {
       "id": "prop3",
-      "type": "Farm House",
+      "type": "House",
+      "title": "Farm House",
       "bedrooms": 3,
       "price": 300500,
       "featured": false,
@@ -76,7 +79,8 @@
   },
   {
       "id": "prop4",
-      "type": "Hard Wood House",
+      "type": "House",
+      "title": "Hard Wood House",
       "bedrooms": 4,
       "price": 789000,
       "featured": true,
@@ -102,6 +106,7 @@
   {
       "id": "prop5",
       "type": "Apartment",
+      "title": "Apartment For Lease",
       "bedrooms": 3,
       "price": 399999,
       "featured": true,
@@ -126,7 +131,8 @@
   },
   {
       "id": "prop6",
-      "type": "Beach front Apartment",
+      "type": "Apartment",
+      "title": "Beach front Apartment",
       "bedrooms": 2,
       "price": 399995,
       "featured": true,
@@ -151,7 +157,8 @@
   },
   {
       "id": "prop7",
-      "type": "Condo for Sale",
+      "type": "Apartment",
+      "title": "Condo for Sale",
       "bedrooms": 5,
       "price": 94000,
       "featured": false,
@@ -176,7 +183,8 @@
   },
   {
       "id": "prop8",
-      "type": "Farm House",
+      "type": "House",
+      "title": "Farm House",
       "bedrooms": 5,
       "price": 104000,
       "featured": false,
@@ -202,7 +210,8 @@
   },
   {
       "id": "prop9",
-      "type": "Condo for Sale",
+      "type": "Apartment",
+      "title": "Condo for Sale",
       "bedrooms": 2,
       "price": 252000,
       "featured": false,
