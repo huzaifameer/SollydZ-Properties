@@ -5,20 +5,14 @@ import SingleProperty from "../SingleProperty/SingleProperty.jsx";
 import HeroArea from "../HeroArea/HeroArea.jsx";
 import BannerArea from "../Banner/BannerArea.jsx";
 import { Link } from "react-router-dom";
-
+import FilterProperty from "../FilterProperty/FilterProperty.jsx";
+import {PropertyConsumer} from "../../context.jsx";
 
 class Properties extends Component {
     static contextType = PropertyContext;
 
     state = {
         favorites: [],
-        filter: {
-            type: "all",
-            price: "",
-            location: "",
-            addedDate: "",
-            bedrooms: "",
-        },
     };
 
     handleAddToFavorites = (propertyId) => {
@@ -42,15 +36,6 @@ class Properties extends Component {
             favorites: prevState.favorites.filter((property) => property.id !== propertyId),
         }));
     };
-    handleFilterChange = (name, value) => {
-        // Update the filter state when the filter changes
-        this.setState((prevState) => ({
-            filter: {
-                ...prevState.filter,
-                [name]: value,
-            },
-        }));
-    };
 
     render() {
         let { loading, properties: properties } = this.context;
@@ -69,6 +54,7 @@ class Properties extends Component {
 
         return (
             <>
+
                 <HeroArea hero="propertiesHero">
                     <BannerArea mainTitle="Find Your Property" subTitle="Empowering Sellers, Delighting Buyers.">
                         <Link to="/" className="banner-btn">
@@ -77,7 +63,18 @@ class Properties extends Component {
                     </BannerArea>
                 </HeroArea>
                 <br/>
-
+                {/*Property Filter area starting*/}
+                <PropertyConsumer>
+                    {
+                        (value) =>{
+                            console.log(value)
+                            return(
+                                <FilterProperty/>
+                            )
+                        }
+                    }
+                </PropertyConsumer>
+                {/*Property Filter area ending*/}
                 {/* Favorites property list Section starting */}
                 <section>
                     <TitleBar title="Create Your Favorite List"/>
