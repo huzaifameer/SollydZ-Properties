@@ -1,8 +1,8 @@
 function FilterProperty(){
     return(
         <>
-            <div className="container mt-4" style={{ height: "300px", width: "550px" }}>
-                <h4>Filter Properties:</h4>
+            <div className="container mt-4" style={{ height: "350px", width: "550px",border:'2px solid #fff',padding:'20px',marginBottom:'20px' }}>
+                <h4 style={{textAlign:'center',color:'#fff'}}>Advance Search</h4>
                 <form>
                     <div className="row mb-3">
                         {/* Type filter */}
@@ -49,7 +49,7 @@ function FilterProperty(){
 
                         {/* Search button */}
                         <div className="col-md-2 d-flex align-items-end">
-                            <button type="button" className="btn btn-primary">Search</button>
+                            <button type="button" className="btn btn-outline-light">Search</button>
                         </div>
                     </div>
                 </form>
