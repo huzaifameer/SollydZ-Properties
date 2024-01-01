@@ -16,14 +16,14 @@ class Properties extends Component {
     };
 
     handleAddToFavorites = (propertyId) => {
-        // Check if the property is already in favorites
+        // Check whether the property is already in favorites property list
         const isThePropertyInFavorites = this.state.favorites.some((property) => property.id === propertyId);
 
         if (!isThePropertyInFavorites) {
-            // Find the selected property using the propertyId
+            // Finds the selected property using the propertyId from the list
             const selectedProperty = this.context.properties.find((property) => property.id === propertyId);
 
-            // Add the property to favorites
+            // Adding the property to favorites property list
             this.setState((prevState) => ({
                 favorites: [...prevState.favorites, selectedProperty],
             }));
@@ -31,29 +31,29 @@ class Properties extends Component {
     };
 
     handleRemoveFromFavorites = (propertyId) => {
-        // Remove the property from favorites
+        // Remove the property from favorites property list
         this.setState((prevState) => ({
             favorites: prevState.favorites.filter((property) => property.id !== propertyId),
         }));
     };
 
-    handleSearch = (filters) => {
+    handleSearch = (filterProp) => {
         // Implement the logic to filter properties based on the provided filters
         const { properties } = this.context;
 
-        // Example: Filtering based on type, location, and price range
+        // Process to filter the properties : Filtering process is based on type, location,added date, no of bedrooms and price range
         const filteredProperties = properties.filter((property) => {
             return (
-                (filters.type === "" || property.type === filters.type)  &&
-                (filters.location === "" || property.location.includes(filters.location))  &&
-                (filters.minPrice === "" || property.price >= parseInt(filters.minPrice, 10))  &&
-                (filters.maxPrice === "" || property.price <= parseInt(filters.maxPrice, 10))  &&
-                (filters.bedRooms === "" || property.bedrooms ===parseInt(filters.bedRooms)) &&
-                (filters.addedDate ==="" || property.added.year.includes(filters.addedDate) && property.added.month.includes(filters.addedDate))
+                (filterProp.type === "" || property.type === filterProp.type)  &&
+                (filterProp.location === "" || property.location.includes(filterProp.location))  &&
+                (filterProp.minPrice === "" || property.price >= parseInt(filterProp.minPrice, 10))  &&
+                (filterProp.maxPrice === "" || property.price <= parseInt(filterProp.maxPrice, 10))  &&
+                (filterProp.bedRooms === "" || property.bedrooms ===parseInt(filterProp.bedRooms)) &&
+                (filterProp.addedDate ==="" || property.added.year.includes(filterProp.addedDate) && property.added.month.includes(filterProp.addedDate))
             );
         });
 
-        // Update the state with the filtered properties
+        // Updates the state using the filtered properties list
         this.setState({
             filteredProperties,
         });
