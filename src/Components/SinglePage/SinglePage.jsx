@@ -18,6 +18,7 @@ export default function SinglePage() {
     }
 
     const { title,type, description, bedrooms, price, location, images } = property;
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
     const handleImageClick = (index) => {
@@ -48,7 +49,7 @@ export default function SinglePage() {
                         {images && Array.isArray(images) && (
                             images.map((image, index) => (
                                 <div key={index} className={`carousel-item ${index === selectedImageIndex ? 'active' : ''}`}>
-                                    <img src={image} className="d-block w-50 mx-auto" alt={`Property ${index + 1}`} />
+                                    <img src={image} className="d-block mx-auto" alt={`Property ${index + 1}`} />
                                 </div>
                             ))
                         )}
@@ -74,7 +75,7 @@ export default function SinglePage() {
                                 className="img-thumbnail mx-2"
                                 alt={`Thumbnail ${index + 1}`}
                                 onClick={() => handleImageClick(index)}
-                                style={{ cursor: 'pointer', border: index === selectedImageIndex ? '1px solid #007BFF' : '2px solid transparent', width: '150px' }}
+                                style={{ cursor: 'pointer', border: index === selectedImageIndex ? '1px solid #007BFF' : '2px solid #384446', width: '150px',overflow:'hidden' }}
                             />
                         ))
                     )}
