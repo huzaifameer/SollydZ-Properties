@@ -6,13 +6,13 @@ import HeroArea from "../HeroArea/HeroArea.jsx";
 import BannerArea from "../Banner/BannerArea.jsx";
 import { Link } from "react-router-dom";
 import FilterProperty from "../FilterProperty/FilterProperty.jsx";
-import {PropertyConsumer} from "../../context.jsx";
 
 class Properties extends Component {
     static contextType = PropertyContext;
 
     state = {
         favorites: [],
+        filteredProperties: [], // Add state to store filtered properties
     };
 
     handleAddToFavorites = (propertyId) => {
@@ -37,24 +37,55 @@ class Properties extends Component {
         }));
     };
 
-    render() {
-        let { loading, properties: properties } = this.context;
-        properties = properties.map((property) => {
-            const isInFavorites = this.state.favorites.some((favProperty) => favProperty.id === property.id);
+    handleSearch = (filters) => {
+        // Implement the logic to filter properties based on the provided filters
+        const { properties } = this.context;
+
+        // Example: Filtering based on type, location, and price range
+        const filteredProperties = properties.filter((property) => {
             return (
+                (filters.type === "" || property.type === filters.type) &&
+                (filters.location === "" || property.location.includes(filters.location)) &&
+                (filters.minPrice === "" || property.price >= parseInt(filters.minPrice, 10)) &&
+                (filters.maxPrice === "" || property.price <= parseInt(filters.maxPrice, 10))
+            );
+        });
+
+        // Update the state with the filtered properties
+        this.setState({
+            filteredProperties,
+        });
+    };
+
+    render() {
+        const { loading } = this.context;
+        let properties;
+
+        // Use either filteredProperties or all properties based on whether a search is performed
+        if (this.state.filteredProperties.length > 0) {
+            properties = this.state.filteredProperties.map((property) => (
                 <SingleProperty
                     key={property.id}
                     property={property}
                     onAddToFavorites={this.handleAddToFavorites}
-                    isInFavorites={isInFavorites}
+                    isInFavorites={this.state.favorites.some((favProperty) => favProperty.id === property.id)}
                     onRemoveFromFavorites={this.handleRemoveFromFavorites}
                 />
-            );
-        });
+            ));
+        } else {
+            properties = this.context.properties.map((property) => (
+                <SingleProperty
+                    key={property.id}
+                    property={property}
+                    onAddToFavorites={this.handleAddToFavorites}
+                    isInFavorites={this.state.favorites.some((favProperty) => favProperty.id === property.id)}
+                    onRemoveFromFavorites={this.handleRemoveFromFavorites}
+                />
+            ));
+        }
 
         return (
             <>
-
                 <HeroArea hero="propertiesHero">
                     <BannerArea mainTitle="Find Your Property" subTitle="Empowering Sellers, Delighting Buyers.">
                         <Link to="/" className="banner-btn">
@@ -62,25 +93,16 @@ class Properties extends Component {
                         </Link>
                     </BannerArea>
                 </HeroArea>
-                <br/>
-                {/*Property Filter area starting*/}
-                <PropertyConsumer>
-                    {
-                        (value) =>{
-                            console.log(value)
-                            return(
-                                <FilterProperty/>
-                            )
-                        }
-                    }
-                </PropertyConsumer>
-                {/*Property Filter area ending*/}
+                <br />
+                {/* Property Filter area starting */}
+                <FilterProperty onSearch={this.handleSearch} />
+                {/* Property Filter area ending */}
                 {/* Favorites property list Section starting */}
                 <section>
-                    <TitleBar title="Create Your Favorite List"/>
+                    <TitleBar title="Create Your Favorite List" />
                     {this.state.favorites.map((favorite) => (
-                        <div key={favorite.id} className ='favorit-section'>
-                            <div  className="favorite-property">
+                        <div key={favorite.id} className='favorit-section'>
+                            <div className="favorite-property">
                                 <img src={favorite.picture} alt={favorite.type} />
                                 <div>
                                     <strong>{favorite.type}</strong> - ${favorite.price}
@@ -93,22 +115,20 @@ class Properties extends Component {
                                 </button>
                             </div>
                         </div>
-
                     ))}
                 </section>
                 {/* Favorites property list Section ending */}
 
-                {/*section to display all the properties start*/}
-                <section className="services-area">{/*using the service areas style*/}
+                {/* section to display all the properties start */}
+                <section className="services-area">{/* using the service areas style */}
                     <section className="featured-properties">
                         <div className="featured-properties-center">
-                            {/*using a condition to check the availability of the properties*/}
+                            {/* using a condition to check the availability of the properties */}
                             {loading ? <h1>Loading</h1> : properties}
                         </div>
                     </section>
                 </section>
-                {/*section to display all the properties ending*/}
-
+                {/* section to display all the properties ending */}
             </>
         );
     }
