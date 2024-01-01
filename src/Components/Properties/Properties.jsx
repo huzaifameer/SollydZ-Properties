@@ -44,11 +44,12 @@ class Properties extends Component {
         // Example: Filtering based on type, location, and price range
         const filteredProperties = properties.filter((property) => {
             return (
-                (filters.type === "" || property.type === filters.type) &&
-                (filters.location === "" || property.location.includes(filters.location)) &&
-                (filters.minPrice === "" || property.price >= parseInt(filters.minPrice, 10)) &&
-                (filters.maxPrice === "" || property.price <= parseInt(filters.maxPrice, 10)) &&
-                (filters.bedRooms === "" || property.bedrooms ===parseInt(filters.bedRooms))
+                (filters.type === "" || property.type === filters.type)  &&
+                (filters.location === "" || property.location.includes(filters.location))  &&
+                (filters.minPrice === "" || property.price >= parseInt(filters.minPrice, 10))  &&
+                (filters.maxPrice === "" || property.price <= parseInt(filters.maxPrice, 10))  &&
+                (filters.bedRooms === "" || property.bedrooms ===parseInt(filters.bedRooms)) &&
+                (filters.addedDate ==="" || property.added.year.includes(filters.addedDate) && property.added.month.includes(filters.addedDate))
             );
         });
 
@@ -62,9 +63,10 @@ class Properties extends Component {
         const { loading } = this.context;
         let properties;
 
-        // Use either filteredProperties or all properties based on whether a search is performed
+        // This will display either filteredProperties or all properties based on whether a search is performed in the filtering option
         if (this.state.filteredProperties.length > 0) {
-            properties = this.state.filteredProperties.map((property) => (
+            //checking whether there's any properties which is in the array
+            properties = this.state.filteredProperties.map((property) => ( //getting the properties from the array and passing it to display the property
                 <SingleProperty
                     key={property.id}
                     property={property}
@@ -98,6 +100,7 @@ class Properties extends Component {
                 {/* Property Filter area starting */}
                 <FilterProperty onSearch={this.handleSearch} />
                 {/* Property Filter area ending */}
+
                 {/* Favorites property list Section starting */}
                 <section>
                     <TitleBar title="Create Your Favorite List" />
