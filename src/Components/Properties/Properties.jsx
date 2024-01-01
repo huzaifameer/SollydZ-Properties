@@ -11,8 +11,8 @@ class Properties extends Component {
     static contextType = PropertyContext;
 
     state = {
-        favorites: [],
-        filteredProperties: [], // Add state to store filtered properties
+        favorites: [],// The array to store favorites properties
+        filteredProperties: [], // The array to store filtered properties
     };
 
     handleAddToFavorites = (propertyId) => {
@@ -47,7 +47,8 @@ class Properties extends Component {
                 (filters.type === "" || property.type === filters.type) &&
                 (filters.location === "" || property.location.includes(filters.location)) &&
                 (filters.minPrice === "" || property.price >= parseInt(filters.minPrice, 10)) &&
-                (filters.maxPrice === "" || property.price <= parseInt(filters.maxPrice, 10))
+                (filters.maxPrice === "" || property.price <= parseInt(filters.maxPrice, 10)) &&
+                (filters.bedRooms === "" || property.bedrooms ===parseInt(filters.bedRooms))
             );
         });
 

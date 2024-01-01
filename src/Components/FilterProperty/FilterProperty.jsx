@@ -1,24 +1,25 @@
 import React, { useState } from "react";
 
+// eslint-disable-next-line react/prop-types
 function FilterProperty({ onSearch }) {
-    const [filterValues, setFilterValues] = useState({
+    const [filteredValues, setFilteredValues] = useState({
         type: "",
         location: "",
         minPrice: "",
         maxPrice: "",
         addedDate: "",
-        minRooms: "",
+        bedRooms: "",
     });
 
-    const handleChange = (e) => {
-        setFilterValues({
-            ...filterValues,
-            [e.target.name]: e.target.value,
+    const handleTheChange = (data) => {
+        setFilteredValues({
+            ...filteredValues,
+            [data.target.name]: data.target.value,
         });
     };
 
     const handleSearch = () => {
-        onSearch(filterValues);
+        onSearch(filteredValues);
     };
 
     return (
@@ -30,7 +31,7 @@ function FilterProperty({ onSearch }) {
                         {/* Type filter */}
                         <div className="col-md-6">
                             <label htmlFor="type" className="form-label">Type:</label>
-                            <select name="type" id="type" className="form-select" onChange={handleChange}>
+                            <select name="type" id="type" className="form-select" onChange={handleTheChange}>
                                 <option value="">All</option>
                                 <option value="House">House</option>
                                 <option value="Apartment">Apartment</option>
@@ -40,7 +41,7 @@ function FilterProperty({ onSearch }) {
                         {/* Location filter */}
                         <div className="col-md-6">
                             <label htmlFor="location" className="form-label">Location:</label>
-                            <input type="text" name="location" id="location" className="form-control" onChange={handleChange} />
+                            <input type="text" name="location" id="location" className="form-control" onChange={handleTheChange} />
                         </div>
                     </div>
 
@@ -48,11 +49,11 @@ function FilterProperty({ onSearch }) {
                         {/* Price Range input range */}
                         <div className="col-md-6">
                             <label htmlFor="minPrice" className="form-label">Min Price:</label>
-                            <input type="number" name="minPrice" id="minPrice" className="form-control" placeholder="Min Price" onChange={handleChange} />
+                            <input type="number" name="minPrice" id="minPrice" className="form-control" placeholder="Min Price" onChange={handleTheChange} />
                         </div>
                         <div className="col-md-6">
                             <label htmlFor="maxPrice" className="form-label">Max Price:</label>
-                            <input type="number" name="maxPrice" id="maxPrice" className="form-control" placeholder="Max Price" onChange={handleChange} />
+                            <input type="number" name="maxPrice" id="maxPrice" className="form-control" placeholder="Max Price" onChange={handleTheChange} />
                         </div>
                     </div>
 
@@ -60,13 +61,13 @@ function FilterProperty({ onSearch }) {
                         {/* Added Date filter */}
                         <div className="col-md-6">
                             <label htmlFor="addedDate" className="form-label">Added Date:</label>
-                            <input type="date" name="addedDate" id="addedDate" className="form-control" onChange={handleChange} />
+                            <input type="date" name="addedDate" id="addedDate" className="form-control" onChange={handleTheChange} />
                         </div>
 
                         {/* No of Bed Rooms filter */}
                         <div className="col-md-4">
-                            <label htmlFor="minRooms" className="form-label">No of Bed Rooms:</label>
-                            <input type="number" name="minRooms" id="minRooms" className="form-control" onChange={handleChange} />
+                            <label htmlFor="bedRooms" className="form-label">No of Bed Rooms:</label>
+                            <input type="number" name="bedRooms" id="bedRooms" className="form-control" onChange={handleTheChange} />
                         </div>
 
                         {/* Search button */}
