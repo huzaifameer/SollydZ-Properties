@@ -17,7 +17,7 @@ export default function SinglePage() {
         );
     }
 
-    const { title,type, description, bedrooms, price, location, images } = property;
+    const { title,type, description, bedrooms, price, location, images,url } = property;
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
@@ -84,10 +84,14 @@ export default function SinglePage() {
                 {/* Displaying all the property details */}
                 <br/>
                 <h2 style={{textAlign:'center'}}>{title}</h2>{/*property heading and type*/}
-                <p style={{paddingLeft:'50px'}}>Property Type -  {type}</p>{/*no of bedrooms*/}
-                <p style={{paddingLeft:'50px'}}>Bedrooms -  {bedrooms}</p>{/*no of bedrooms*/}
-                <p style={{paddingLeft:'50px'}}>Price - ${price}</p>{/*prices of the property*/}
-                <p style={{paddingLeft:'50px'}}>Location - {location} {}</p>{/*property location*/}
+                <p style={{paddingLeft:'50px'}}><b><i>Property Type -</i></b>  {type}</p>{/*no of bedrooms*/}
+                <p style={{paddingLeft:'50px'}}><b><i>Bedrooms - </i></b> {bedrooms}</p>{/*no of bedrooms*/}
+                <p style={{paddingLeft:'50px'}}><b><i>Price - </i></b> ${price}</p>{/*prices of the property*/}
+                <iframe
+                    src={url}
+                    width="400" height="300" style={{ border: '2px solid #384446',borderRadius:'20px',marginLeft:'50px',display:'grid' }} allowFullScreen="" loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"></iframe><br/>
+                <p style={{paddingLeft:'50px'}}><strong>{location} {}</strong></p>{/*property location*/}
                 <p style={{textAlign:'justify',padding:'40px 50px',backgroundColor:'#ffffff',borderRadius:'22px'}}><h4>More Information</h4> <hr/>  {description}</p>
                 <br/>
             </div>
