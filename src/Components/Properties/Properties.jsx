@@ -135,6 +135,7 @@ class Properties extends Component {
                     </section>
                 </section>
                 {/* section to display all the properties ending */}
+
             </>
         );
     }

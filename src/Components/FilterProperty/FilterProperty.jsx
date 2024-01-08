@@ -40,17 +40,24 @@ function FilterProperty({ onSearch }) {
                     {/* Input option for the Location */}
                     <div className="col-12 col-sm-6 col-md-4 mb-3">
                         <label htmlFor="location" className="form-label">Location:</label>
-                        <input type="text" name="location" id="location" className="form-control" onChange={handleTheChange} />
+                        <input type="text" name="location" id="location" className="form-control" placeholder='Enter Location' onChange={handleTheChange} />
                     </div>
 
-                    {/* Input option for the Minimum Price */}
-                    <div className="col-12 col-md-4 mb-3">
-                        <label htmlFor="minPrice" className="form-label">Min Price:</label>
-                        <input type="number" name="minPrice" id="minPrice" className="form-control" placeholder="Min Price" onChange={handleTheChange} />
+                    {/* Input option for the Added date */}
+                    <div className="col-12 col-sm-6 col-md-4 mb-3">
+                        <label htmlFor="addedDate" className="form-label">Added Date:</label>
+                        <input type="date" name="addedDate" id="addedDate" className="form-control" onChange={handleTheChange} />
                     </div>
+
                 </div>
 
                 <div className="row mb-3">{/* Second row of the filter option form */}
+
+                    {/* Input option for the Minimum Price */}
+                    <div className="col-12 col-md-3 mb-3">
+                        <label htmlFor="minPrice" className="form-label">Min Price:</label>
+                        <input type="number" name="minPrice" id="minPrice" className="form-control" placeholder="Min Price" onChange={handleTheChange} />
+                    </div>
 
                     {/* Input option for the Maximum Price */}
                     <div className="col-12 col-md-3 mb-3">
@@ -58,21 +65,15 @@ function FilterProperty({ onSearch }) {
                         <input type="number" name="maxPrice" id="maxPrice" className="form-control" placeholder="Max Price" onChange={handleTheChange} />
                     </div>
 
-                    {/* Input option for the Added date */}
-                    <div className="col-12 col-md-3 mb-3">
-                        <label htmlFor="addedDate" className="form-label">Added Date:</label>
-                        <input type="date" name="addedDate" id="addedDate" className="form-control" onChange={handleTheChange} />
-                    </div>
-
                     {/* Input option for the Number of bedrooms */}
                     <div className="col-12 col-md-3 mb-3">
                         <label htmlFor="bedRooms" className="form-label">No of Bed Rooms:</label>
-                        <input type="number" name="bedRooms" id="bedRooms" className="form-control" onChange={handleTheChange} />
+                        <input type="number" name="bedRooms" id="bedRooms" className="form-control" placeholder='No of Bedrooms' onChange={handleTheChange} />
                     </div>
 
                     {/* Search button for the filtering form */}
                     <div className="col-12 col-md-3 {/*d-flex*/} ">
-                        <label htmlFor="nothing" className="form-label" style={{color:'white'}}><b>Find The Propert</b> </label>
+                        <label htmlFor="nothing" className="form-label" style={{color:'white'}}><b>Find The Property</b> </label>
                         <button type="button" className="btn btn-outline-light w-100" onClick={handleTheSearch}>
                             Search
                         </button>
