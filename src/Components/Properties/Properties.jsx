@@ -102,8 +102,8 @@ class Properties extends Component {
                 {/* Property Filter area ending */}
 
                 {/* Favorites property list Section starting */}
-                <section>
-                    <TitleBar title="Create Your Favorite List" />
+                <section className='favorit-outer'>
+                    <TitleBar title="Create Your Favorite List"/>
                     {this.state.favorites.map((favorite) => (
                         <div key={favorite.id} className='favorit-section'>
                             <div className="favorite-property">
