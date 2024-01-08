@@ -132,7 +132,7 @@
 
 .featured-properties {
     padding: 5rem 0;
-    margin: 0 80px !important;
+   /* margin: 0 180px !important;*/
 }
 .featured-properties-center {
     width: 80vw;
@@ -167,25 +167,23 @@
 /*single property style end*/
 
 /*styles for filtreing*/
-.filter-container{
-    display: inline-block;
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: blanchedalmond;
-    background: rgba(0,0,0,0.5);
-    padding:5px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
     text-align: center;
     justify-content: center;
-    align-items: center;
-    margin-top: -1000px;
-    margin-left: 700px;
-    margin-bottom: -1000px;
+    border: 2px solid #ffffff; /* Add a border */
 }
-/*styles for filtreing*/
+/*styles for filtering*/
 
 /*-----------------*/
 /* Add some styling for the favorites section */
 .favorit-outer{
     background: linear-gradient(to right, #464646, #6D6D6D, #BDBDBD) !important;
-    /*border: 3px solid #384446;*/
     align-items: center;
     justify-content: center;
     margin: 40px 15px 0;
@@ -196,7 +194,7 @@
     display: inline-grid;
     justify-content: center;
     align-items: center;
-    margin-left: 70px;
+    margin-left: 60px;
 }
 .favorite-property {
     border: 2px solid #ffffff;

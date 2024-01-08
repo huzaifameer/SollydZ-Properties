@@ -43,13 +43,15 @@ class Properties extends Component {
 
         // Process to filter the properties : Filtering process is based on type, location,added date, no of bedrooms and price range
         const filteredProperties = properties.filter((property) => {
+            const propertyDate = new Date(property.year, property.month - 1, property.day); // Create a Date object from property date
+            const selectedDate = new Date(filterProp.addedDate); // Create a Date object from selected date
             return (
                 (filterProp.type === "" || property.type === filterProp.type)  &&
                 (filterProp.location === "" || property.location.includes(filterProp.location))  &&
                 (filterProp.minPrice === "" || property.price >= parseInt(filterProp.minPrice, 10))  &&
                 (filterProp.maxPrice === "" || property.price <= parseInt(filterProp.maxPrice, 10))  &&
                 (filterProp.bedRooms === "" || property.bedrooms ===parseInt(filterProp.bedRooms)) &&
-                (filterProp.addedDate ==="" || property.added.year.includes(filterProp.addedDate) && property.added.month.includes(filterProp.addedDate))
+                (filterProp.addedDate === "" || propertyDate >= selectedDate)
             );
         });
 
