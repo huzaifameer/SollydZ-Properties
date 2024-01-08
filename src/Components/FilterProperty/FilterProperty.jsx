@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function FilterProperty({ onSearch }) {
+    /*state to store the filtered values*/
     const [filteredValues, setFilteredValues] = useState({
         type: "",
         location: "",
