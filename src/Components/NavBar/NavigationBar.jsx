@@ -27,16 +27,17 @@ const NavigationBar = () => {
                         <div className="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <Link className="nav-link" aria-current="page" to="/">Home</Link>
+                                    <Link className="nav-link" aria-current="page" to="/">Home</Link> {/*setting the home page*/}
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/properties">Properties</Link>
+                                    <Link className="nav-link" to="/properties">Properties</Link> {/*setting the link for the property page*/}
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/aboutus">About Us</Link>
+                                    <Link className="nav-link" to="/aboutus">About Us</Link> {/*setting the link for the About Us page*/}
                                 </li>
                             </ul>
                             <span className='navbar-text'>
+                                {/*setting the search bar*/}
                                 <form className="d-flex">
                                     <input className="form-control me-1" type="search" placeholder="Enter the property key"
                                            aria-label="Search" />

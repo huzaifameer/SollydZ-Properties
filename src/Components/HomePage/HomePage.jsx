@@ -10,7 +10,7 @@ function HomePage(){
         <>
             <HeroArea hero='defaultHeroClass'>
                 <BannerArea mainTitle="Effortless Home Sales" subTitle='Unlocking Doors to Modern Transactions'>
-                    <Link to='/properties' className='banner-btn'>
+                    <Link to='/properties' className='banner-btn'>{/*button for the properties page*/}
                         Find Properties
                     </Link>
                 </BannerArea>

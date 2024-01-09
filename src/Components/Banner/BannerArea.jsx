@@ -3,10 +3,10 @@
 function BannerArea({children,mainTitle,subTitle}){
     return(
         <div className='bannerArea'>
-            <h1>{mainTitle}</h1>
+            <h1>{mainTitle}</h1>{/*setting the main title*/}
             <div></div>
-            <p>{subTitle}</p>
-            {children}
+            <p>{subTitle}</p>{/*adding the sub heading*/}
+            {children}{/*getting the children props*/}
         </div>
     )
 }

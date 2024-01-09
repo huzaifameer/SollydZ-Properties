@@ -9,22 +9,24 @@ import React from "react";
 function AboutUs(){
     return(
         <>
-            <div className="container special-margin special">
+            <div className="container special-margin special">{/*main display for the about page*/}
                 <div className="row">
                         <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
-                            <div className="carousel-indicators">
+                            <div className="carousel-indicators">{/*adding a image slider to the page*/}
+                                {/*bottom button start*/}
                                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
                                         className="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
                                         aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                                         aria-label="Slide 3"></button>
+                                {/*bottom button end*/}
                             </div>
                             <div className="carousel-inner">
                                 <div className="carousel-item active" data-bs-interval="10000">
-                                    <img src={House1} className="d-block w-100" alt="..." />
+                                    <img src={House1} className="d-block w-100" alt="..." />{/*setting a size to the image*/}
                                         <div className="carousel-caption d-none d-md-block">
-                                            <h1>Unlock the Door to Your Future</h1>
+                                            <h1>Unlock the Door to Your Future</h1>{/*heading for the card*/}
                                             <h5>Experience the art of living with us where every property is a masterpiece.</h5>
                                         </div>
                                 </div>
@@ -43,11 +45,13 @@ function AboutUs(){
                                         </div>
                                 </div>
                             </div>
+                            {/*button for the slider - side button*/}
                             <button className="carousel-control-prev" type="button"
                                     data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span className="visually-hidden">Previous</span>
                             </button>
+                            {/*button for the slider - side button*/}
                             <button className="carousel-control-next" type="button"
                                     data-bs-target="#carouselExampleDark" data-bs-slide="next">
                                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
@@ -58,12 +62,13 @@ function AboutUs(){
             </div><br/>
             <div className="container border-5">
                 <div className="row row-cols-1 row-cols-md-3 g-4">
+                    {/*adding the details card*/}
                     <div className="col">
                         <div className="card h-100">
-                            <img src={AboutUsImg} className="card-img-top" alt="..." />
+                            <img src={AboutUsImg} className="card-img-top" alt="..." />{/*setting a thumbnail picture*/}
                             <div className="card-body">
-                                <h5 className="card-title">About SollydZ</h5>
-                                <p className="card-text">
+                                <h5 className="card-title">About SollydZ</h5>{/*topic of the card*/}
+                                <p className="card-text">{/*adding a paragraph for the card*/}
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi debitis ipsum
                                     velit? A ab aliquam blanditiis impedit labore laborum, maxime placeat possimus
                                     praesentium quaerat quibusdam rerum sequi sit temporibus tenetur. A, aspernatur

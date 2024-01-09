@@ -6,9 +6,10 @@ function ContactPage(){
     return(
         <>
             <div className="container-fluid">
+                {/*creating a form to the contact details*/}
                 <div className="container">
                     <div className='mt-3'>
-                        <TitleBar title="Contact Us"/>
+                        <TitleBar title="Contact Us"/>{/*setting a title to the page*/}
                     </div>
                     <div className="row">
                         <div className="col-md-7 shadow rounded p-5">
@@ -38,7 +39,7 @@ function ContactPage(){
                         </div>
                         <div className="col-md-5 bg-light">
                             <div className='ml-5'>
-                                <img src={contactPic} alt="Background" className='img-fluid'/>
+                                <img src={contactPic} alt="Background" className='img-fluid'/> {/*setting the side image*/}
                             </div>
                         </div>
                     </div><br/>

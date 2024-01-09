@@ -6,10 +6,12 @@ import LinkedIn from '/src/assets/Images/linkedin.svg'
 function Footer(){
     return(
         <>
+            {/*creating a footer to the form*/}
             <section className="footer">
                 <div className="footer-box">
-                    <h2>SollydZ Properties</h2>
+                    <h2>SollydZ Properties</h2>{/*side heading of the footer*/}
                     <p>Find your place in the heart of exceptional living with us.</p>
+                    {/*adding links for the footer*/}
                     <div className="social">
                         <a href="#"><img src={Facebook} alt=""/></a>
                         <a href="#"><img src={Instagram} alt=""/></a>
