@@ -13,12 +13,12 @@ function App() {
     return (
         <>
             <Router>
-                <NavigationBar />
+                <NavigationBar />{/*calling the navigation bar*/}
                 <Routes>
-                    <Route path='/' element={<HomePage/>} />
-                    <Route path='/aboutus' element={<AboutUs/>} />
-                    <Route path='/properties' element={<Properties/>} />
-                    <Route path='/contactpage' element={<ContactPage/>} />
+                    <Route path='/' element={<HomePage/>} />{/*linking the home page*/}
+                    <Route path='/aboutus' element={<AboutUs/>} />{/*linking the about us page*/}
+                    <Route path='/properties' element={<Properties/>} />{/*linking the properties*/}
+                    <Route path='/contactpage' element={<ContactPage/>} />{/*linking the contact page*/}
                     <Route path='/properties/:tenure' element={<SinglePage />} />
                 </Routes>
             </Router>

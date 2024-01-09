@@ -8,16 +8,16 @@ export default function SinglePage() {
     const property = getProperty(tenure);
 
     if (!property) {
-        // Handle the case where property is undefined
+        // Handling the case where property is undefined
         return (
             <div className={'error'}>
                 <h3>Property not found</h3>
-                {/* Add a link or button to navigate back to the property list */}
+                {/* displaying the message if properties not found */}
             </div>
         );
     }
 
-    const { title,type, description, bedrooms, price, location, images,url } = property;
+    const { title,type, description, bedrooms, price, location, images,url,year,day,month } = property;
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
@@ -92,6 +92,7 @@ export default function SinglePage() {
                     width="400" height="300" style={{ border: '2px solid #384446',borderRadius:'20px',marginLeft:'50px',display:'grid' }} allowFullScreen="" loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"></iframe><br/>
                 <p style={{paddingLeft:'50px'}}><strong>{location} {}</strong></p>{/*property location*/}
+                <p style={{paddingLeft:'50px'}}><strong>Added Date : {day} / {month} / {year}</strong></p>{/*property added date*/}
                 <p style={{textAlign:'justify',padding:'40px 50px',backgroundColor:'#ffffff',borderRadius:'22px'}}><h4>More Information</h4> <hr/>  {description}</p>
                 <br/>
             </div>
